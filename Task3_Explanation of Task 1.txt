@@ -1,0 +1,28 @@
+Hi Manoj,
+Approach I have used for completing Task 1 are:
+1. First I have implemented Css and javascript by which I have created the survey form. Also used bootstrap library of javacsript in Html to beautify the form and google jQuery script to implement jQuery in <srcipt> tags.
+Now for taking inputs of email id and contact number from user I have used <input> tag inside <div class="container">.
+2. intelinput library is used so that in <script> tag country code can be displayed in survey form: 
+window.intlTelInput(input, {
+        separateDialCode: true,
+        preferredCountries: ["in"]
+    });
+3. For rendering to second page I have made different file test.html for showing inputs which are taken by user. 
+4. For displaying input javascript is used in <script> tag of html. In script tag I have used params:const params = new URLSearchParams(document.location.search) and stored input of email and contact number in 2 different variables:
+const email = params.get("email");
+const phone = params.get("phone");
+then by using innerText I am displaying data on 2nd page : 
+document.getElementById("outputNumber").innerText = phone
+document.getElementById("outputEmail").innerText = email
+5.For applying validation in input fields regex I am using : 
+var phoneno = /^\d{10}$/;
+        if (inputtxt.value.match(phoneno)) {
+        console.log('test1');
+            return true;
+        } 
+6.For making website mobile responsive in <style> tag:
+@media only screen and (min-width: 320px) and (max-width: 719px) {
+    .output {
+      margin-top: 50%;
+    }
+  }

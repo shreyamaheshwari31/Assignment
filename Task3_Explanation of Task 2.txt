@@ -1,0 +1,32 @@
+Hi Ravi,
+Approach I have used for completing Task 2 are:
+1. For satisfying any given condition, whole json data have to be traversed so I have used "for loop" for traversing json data using : 
+for (var i=0; i<jsonObj.length; i++) condition;
+where variable i starts from 0 till length of json data and in every iteration variable i will go to next element.
+2. In meeting first condition,id have to be traversed in given data if it is even or odd so using for loop I have traversed id using: for (var i=0; i<jsonObj.length; i++), then used for-in loop making sure if condition runs only in those objects who have id as element using:
+for (var id in jsonObj[i]) and then applied "if condition" check where id is divisible by 2 or not. 
+If if(jsonObj[i].id %2==0) means id is divisible by 2,console the details:
+console.log("Name : ",jsonObj[i].name,
+            "UserName : ",jsonObj[i].username, 
+            "Email: ",jsonObj[i].email)
+else print I am odd: console.log("I am Odd");
+3. For 2nd condition, again we have to iterate whole data for all id's using for loop using: 
+for (var i=0; i<jsonObj.length; i++), for every element we have to print address key so I have used forEach loop so that all elements gets iterated using: 
+jsonObj.forEach((element), to print key address(i.e.) suite of all array objects wrt thier id I have : 
+console.log(jsonObj[i].id, jsonObj[i].address.suite)
+4. 3rd condition is to check if in given json data email ends with .biz, By using "for loop" for traversing id through whole data using:
+for (var i=0; i<jsonObj.length; i++) and then using "for-in loop" for accessing given emails because every object have email as key using:
+for (var email in jsonObj[i]) , then in "if condition" using substring for accessing last 3 characters of email and to check whether string of last 3 letters of email matches to .biz or not I have used: 
+if(jsonObj[i].email.substring(jsonObj[i].email.length-4, jsonObj[i].email.length) === '.biz').
+5. In 4th condition, first traverse id:
+for(var i=0; i<jsonObj.length; i++), then using for-in loop to access every element's city in address (by addresscity variable) using:
+for (var addresscity in jsonObj[i]), and then using .include()function in if condition with address.city variable to check whether "Aliyaview" , "Howemouth" and "Gwenborough" city is in array object using: 
+if(jsonObj[i].address.city.includes("Aliyaview")|| jsonObj[i].address.city.includes("Howemouth") || jsonObj[i].address.city.includes("Gwenborough") ), if yes then printing cityname, zipcode and geo details of that city:
+console.log("The Zipcode and Geo of cityname : ",jsonObj[i].address.city ,
+            "is: ",jsonObj[i].address.zipcode,
+            "and ",jsonObj[i].address.geo.lat, jsonObj[i].address.geo.lng).
+6. For validating 5th condition after traversing id in whole data using:
+for(var i=0; i<jsonObj.length; i++), applying "forEach condition" for all objects beacuse we have to run given condition on all objects of array using: 
+jsonObj.forEach((element),  and for maximumlength can be:
+catchPhrase.slice(0,15), while printing letters of catchPhrrase variable: 
+console.log(jsonObj[i].company.catchPhrase.slice(0,15)).

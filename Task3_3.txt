@@ -1,0 +1,13 @@
+Given the family emergency situation, it is important to prioritize and manage the pending tasks effectively. 
+1. Evaluate the urgency and priority of both tasks: Task 2 is of higher priority and has a time-sensitive deadline, whereas Task 1 is of lower priority and does not have a specific go-live date. 
+Hence, it is crucial to prioritize Task 2 and complete it before its due date.
+2. Communicate the situation to customer : It is important to communicate the situation to both the customers involved and explain the delay in completing the tasks. 
+It is essential to convey the urgency of Task 2 and the need for an extension to complete it.
+3. Request an extension for Task 2: As Task 2 is time-sensitive and critical, it would be wise to request an extension for it. 
+It is important to explain the situation and provide an estimated timeline for completing the task.
+4. Re-organizing the workload: As there is a delay of at least 3 days, it is necessary to re-organize the workload and allocate the available time accordingly. 
+This would involve re-prioritizing other pending tasks and rescheduling them as necessary.
+5. Completing Task 1 within the available time: With Task 2 being the priority, it may not be possible to complete Task 1 within its original due date. 
+However, as it is for a low-priority customer and does not have a specific go-live date, it can be completed within the extended timeline.
+6. Monitor progress and communicate updates: It is essential to monitor the progress of both tasks and communicate regular updates to the stakeholders involved. 
+This would help in managing their expectations and keeping them informed about the status of the pending tasks.
